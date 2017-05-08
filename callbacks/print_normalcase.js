@@ -5,5 +5,8 @@ var requestOptions = {
   path: '/http-examples/step1.html'
 };
 
+function printHTML (html) {
+  console.log(html);
+}
 
-myhttp.getHTML(requestOptions, myhttp.printupperHTML);
+myhttp.getHTML(requestOptions, printHTML);
